@@ -9,7 +9,7 @@ public static function getConnection(): PDO
     if(self::$pdo === null){
         try {
             $host =  "localhost";
-            $dbname = "fil-rouge";
+            $dbname = "fil_rouge";
             $login = "root";
             $password = "";
 
@@ -19,8 +19,8 @@ public static function getConnection(): PDO
         }
 
     }
+
     return self::$pdo;
-    
 }
 
 }

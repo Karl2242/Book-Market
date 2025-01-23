@@ -30,9 +30,9 @@ include_once "../utils/autoloader.php";
            
             <fieldset class="flex gap-4">
             <label for="client">Client</label>
-            <input type="radio" id="client" name="pro" value="client">
+            <input type="radio" id="client" name="client" value="client">
             <label for="pro">Professionel</label>
-            <input type="radio" id="pro" name="pro" value="pro" >
+            <input type="radio" id="pro" name="client" value="pro" >
 
             </fieldset>
 <button class="bg-[#011936] p-3 rounded-xl text-white ">S'inscrire</button>
