@@ -28,7 +28,20 @@ session_start();
 <a href=""><img src="./assets/imgs/user 1.png" alt=""></a>
 </div>
 </header>
+<div class="flex justify-center">
+<div class="bg-header border-bottum text-center justify-center items-center w-[70%] h-[80px]">
+    <ul class="flex text-white items-center h-[80px] text-center gap-[8.25rem] justify-center font-extralight">
+        <a href=""><li>Auteur</li></a>
+        <a href=""><li>Loisirs</li></a>
+        <a href=""><li>Scolaire</li></a>
+        <a href=""><li>Jeunesse</li></a>
+        <a href=""><li>Prix</li></a>
+        <a href=""><li>Romans</li></a>
+        <a href=""><li>Bd&Livres</li></a>
+    </ul>
+</div>
 
+</div>
 
 
 </body>

@@ -8,3 +8,7 @@
 background: rgb(1,25,54);
 background: radial-gradient(circle, rgba(1,25,54,1) 0%, rgba(69,108,156,1) 100%);
 }
+
+.border-bottum{
+    border-radius: 0px 0px 15px 15px;
+}
