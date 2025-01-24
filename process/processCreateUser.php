@@ -2,7 +2,7 @@
 include_once "../utils/autoloader.php";
 
 $UserRepo = new UserRepository;
-
+$UserMapper = new UserMapper;
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('location: ../public/home.php');
@@ -71,12 +71,19 @@ if($UserRepo->verifyUser($prenom, $mail)){
 }
 
 
+
 if($client == "client"){
     $UserRepo->createUser($mdp, $prenom, $tel, $mail, 2, $nom, $description);
+    session_start();
+    $monUtilisateur = $UserMapper->convertirEnInstance($UserRepo->verifyUser($prenom, $mail));
+    $_SESSION["user"] = $monUtilisateur;
     header("Location: ../public/mainpage.php");
 }else if($client == "pro")
 {
     $UserRepo->createUser($mdp, $prenom, $tel, $mail, 1, $nom, $description);
+    session_start();
+    $monUtilisateur = $UserMapper->convertirEnInstance($UserRepo->verifyUser($prenom, $mail));
+    $_SESSION["user"] = $monUtilisateur;
     header("Location: ../public/mainpage.php");
 
 }

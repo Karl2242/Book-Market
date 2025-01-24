@@ -22,7 +22,6 @@ class user
             $this->id_role = $id_role;
         }
 
-
 }
 
 
